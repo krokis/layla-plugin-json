@@ -1,0 +1,11 @@
+{
+  "name": "layla-plugin-json",
+  "version": "0.0.1",
+  "description": "Read JSON files directly from your [Layla](//github.com/krokis/layla) code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-3-Clause"
+}
