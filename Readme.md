@@ -18,7 +18,7 @@ First require the plugin in your stylesheet:
 use 'json'
 ~~~
 
-Now you can call the `JSON.read` method to read and parse a JSON file and maybe assign the result to a variable:
+Now you can call the `JSON.load` method to read and parse a JSON file and maybe assign the result to a variable:
 
 ~~~ lay
 use 'json'
