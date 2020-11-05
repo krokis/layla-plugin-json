@@ -12,20 +12,38 @@ Layla =
 ###
 class JSONObject extends Layla.Object
 
-  load: (file) ->
+  ###
+  ###
+  load: (file, context) ->
+    file = context.resolveURI file
 
   ###
   ###
-  '.load': (context, file) ->
-    # Need the context here to load the file...
-    console.log(file)
+  parse: (json) ->
 
-  constructor: (@context) ->
+  ###
+  ###
+  stringify: (object) ->
+
+  ###
+  ###
+  '.load': (context, file) -> 
+    @load file, context
+
+  ###
+  ###
+  '.parse': (context, json) ->
+    @parse json
+
+  ###
+  ###
+  '.stringify': (context, object) ->
+    @stringify object
 
 ###
 ###
 class JSONPlugin extends Layla.Plugin
   use: (context) ->
-    context.set 'JSON', new JSONObject context
+    context.set 'JSON', new JSONObject
 
 module.exports = JSONPlugin
